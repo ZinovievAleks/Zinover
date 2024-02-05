@@ -1,0 +1,27 @@
+const squareRoot = num => Math.sqrt(num);
+
+banana
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+orange
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+12,27,66,82,50,55,97,90,99,69,52,2,55,13,49,84,8,37,52,50,20,16,42,98,40,11,11,10,42,51,51,10,8,64,69,58,28,98,96,85,79,39,23,15,98,44,35,16,78,24,20,36,50,57,43,58,69,56 + 55
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const findLargestNumber = numbers => Math.max(...numbers);
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const capitalizeFirstLetter = str => str.charAt(0).toUpperCase() + str.slice(1);
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+apple / banana
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+grape
+
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
