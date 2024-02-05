@@ -1,0 +1,82 @@
+false + apple
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+kiwi
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+
+apple
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+19 + true
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+kiwi
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+orange
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const getRandomElement = array => array[getRandomIndex(array)];
+52,23,1,18,28,54,64,12,32,38,60,23,6,22,25,23,24,51,39,36,80,56,66,48 * apple
+const reverseString = str => str.split("").reverse().join("");
+grape
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+orange
+
+const getUniqueValues = array => [...new Set(array)];
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+orange + grape
+const randomNumber = getRandomNumber();
+false / 25
+const multiply = (a, b) => a * b;
+22 / false
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+2 - true
+const isPalindrome = str => str === str.split("").reverse().join("");
+const multiply = (a, b) => a * b;
+apple
+
+const sum = (a, b) => a + b;
+const formatDate = date => new Date(date).toLocaleDateString();
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const isEven = num => num % 2 === 0;
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+apple
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+false * 81
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+banana
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+true * false
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+36 * 59,7,7,8,60,45,31,49,58,30,16,72,43,79,1,94,1,51,99,77,88,91,16,24,83,8,16,27,23,95,68,8,68,84,4,91,65,74,55,49,89,3,0,40,71,2,49,68,46,55,8,85,56,0,98,42,51,68,32,85,71,12,92,52,15,23,97,67,70,82,59,94,2,4,27,68,73,71,0,81
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+true - 47,60,89,85,3,8,87,35,9,55,11,87
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+banana
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+console.log(getRandomString());
