@@ -1,0 +1,42 @@
+3 - false
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+banana - apple
+const capitalizeString = str => str.toUpperCase();
+false / false
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+apple
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+orange
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+console.log(getRandomString());
+
+const isEven = num => num % 2 === 0;
+
+const squareRoot = num => Math.sqrt(num);
+kiwi
+
+console.log(getRandomString());
+const randomNumber = getRandomNumber();
+const isPalindrome = str => str === str.split("").reverse().join("");
+grape * 40,7,82,85,10,5,65,70,94,6,91,96,55,12,26,94,6,4,81,1,88,3,33,85,91,12,10,11,85,55,72,67,33,25,13,40,62,84,85,59,12,33,93,2,22,85,39,28,54,28,14,57,37,31,41,41,81,56,46,40,63,13,2
+const greet = name => `Hello, ${name}!`;
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+orange
+
+const randomNumber = getRandomNumber();
+const isEven = num => num % 2 === 0;
+console.log(getRandomString());
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+true + banana
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
