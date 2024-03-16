@@ -1,0 +1,45 @@
+const getUniqueValues = array => [...new Set(array)];
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const getUniqueValues = array => [...new Set(array)];
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+
+22,64,84,61,3,89,45,97,87,83,97,24,0,1,18,60,49,24,68,42,69,23,31,45,36,43,4,33,86,27,39,85,1,36,49,25,44 + 25,60,6,65,23,62
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const reverseString = str => str.split("").reverse().join("");
+apple * apple
+const randomNumber = getRandomNumber();
+true / 86,66,34,53,89,36,2,11,32,41,41,9,20,70,28,91,64,7,70,89,70,97,6,83,87,52,64,86,87,84,58,89,92,17,73,24,41,60,74,78,31,13,46,50,59,5,22,21,31,51,6,58,7,40,84,90,15,53,44,99,97,64,22,19,29,59
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+45 / 3,58,82,33,65,92,86,49,34,25,36,85,5,82,61,25,82,93,91
+const squareRoot = num => Math.sqrt(num);
+
+84,69,24,46,2,15,40,72,85,67,60,11,61,27,46,44,89,34,20,99,56,26,47,22,83,44,94,21,60,77,15,88,59,94,36,45,95,9,95,18,25,50,92,42,84,38,7,76,50,43,99,29,16,86,39,43,43,68,60,92,20,74,78,1,85,15,94,12,8,70,62,23,49,99,77 - banana
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+orange
+
+const capitalizeString = str => str.toUpperCase();
+false - true
+
+const greet = name => `Hello, ${name}!`;
+false / banana
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+apple + 55
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+73,14,52,25,43,16,63,79,33,0,83,23,34 / grape
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const reverseString = str => str.split("").reverse().join("");
+
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const randomNumber = getRandomNumber();
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
