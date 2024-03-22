@@ -1,0 +1,43 @@
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const getRandomElement = array => array[getRandomIndex(array)];
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const removeDuplicates = array => Array.from(new Set(array));
+const variableName = getRandomNumber();
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const getRandomSubset = (array, size) => array.slice(0, size);
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+
+kiwi
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+kiwi
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const removeDuplicates = array => Array.from(new Set(array));
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+const isPalindrome = str => str === str.split("").reverse().join("");
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const findSmallestNumber = numbers => Math.min(...numbers);
+orange / 74
+class MyClass { constructor() { this.property = getRandomString(); } }
+kiwi
+
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const removeDuplicates = array => Array.from(new Set(array));
+apple
+
+const findLargestNumber = numbers => Math.max(...numbers);
+
+kiwi
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const getRandomSubset = (array, size) => array.slice(0, size);
