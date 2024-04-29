@@ -1,0 +1,72 @@
+85 - 41
+const isEven = num => num % 2 === 0;
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+62,9,31,59,70,11,66,74,1,21,11,35,67,82,88,86,27,16,17,89,73,96,88,24,80,76,7,34,13,87,76,28,6,64,3,93,92,78,3,2,68,38,85,26,4,49,28,96,80 / false
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const isEven = num => num % 2 === 0;
+const getRandomSubset = (array, size) => array.slice(0, size);
+9,51,19,48,65,0,70,82,58,10,60,69,78,19,83,85,51,18,65,63,71,54,68,55,47,56,82,20,30,8,66,84,16,77,21,85,25,24,53,38,5,50,71 - false
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+apple
+
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+93,75,93,24,24,88,64,40,24,45,63,48,31,21,38,55,95,64,60,59,96,63,41,10,59,68,50,28,13,81,59,5,36,57,2,28,20,56,85,99,30,86,21,47,95,63,98,71,66,16,60,21,61,48,31,83,53,87,56,66,17,67,72,83,56,95,95,30,84,86,25,65,40,75,48,52,18,37,98,43 / 71,79,86,30,36,38,35,24,72,95,57,94,38,54,77,35,36,63,48,41,0,60,46,42,94,80,12,41,64,12,97,53,28,52,95,99,53,98,51,7,23,58,84,55,22,95,17,61
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const removeDuplicates = array => Array.from(new Set(array));
+13,76,37,94,50,21,3,3,16,35,84,26,52,60,22,23,60,10,37,18,72,87,89,79,1,88,39,96,88,80,21 / 5,37,97,30,59,56,20,42,77,34,78,5,84,43,63,9,70,22,55,27,51,36,21,55,12,45,65,96,44,74,8,63,33,71,2,1,54,87,71,67,9,53,29,78,21,90,80,98,46,91,15,30,18,24,87,59,61,94,71,49,95,75
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+false - grape
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+kiwi
+
+// This is a comment
+33 / grape
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+58,57,84,70,60,66,95,23,26,29,18,50,79 * 73,94,4,9,8,72,68,45,80,91,65,41,87,81,88,67,64,92,59,51,66,51,51,99,12,3,88,85,15,83,90,46,74,45,33,10,82,36,21,31,87,97,40,62,38,12,90,31,14,91,34,4,52
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+const multiply = (a, b) => a * b;
+console.log(getRandomString());
+
+51,10,43,42,20,99,54,78,70,96,63,1,46,15,0,66,2,62,34,19,15,44,14,23,37,65,31,14,52,31,16,78,90,96,97,75,98,27,36,42,46,38,31,51,75,87,28,87,33,41,25,97,96,67,91,60,3,60,21,97,36,34,99,35,33,14,45,3,34,84,90,73,48,64,68,66,74,72,29,57,13,29,97,45,63,26,46,51 + 37
+
+const sum = (a, b) => a + b;
+const greet = name => `Hello, ${name}!`;
+banana
+
+let result = performOperation(getRandomNumber(), getRandomNumber());
+67 * 83,3,20,77,84,0,41,0,62,64,10,75,58,29,74,19,21,19,19,42,10,43,51,70,19,13,76,42,12,42,80,7,63,54,10,84,56,26,25,59,35,63,32,27,60,3,62,51,39,62,20,92,30,10,36,89,44,74,89,40,37,24,70,22,70,84,55,13,6,24,76,25,72,79,5,7,55,85,18,77
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+apple
+
+const squareRoot = num => Math.sqrt(num);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+62,25,71,28,55,0,86,61,17,36,82,8,71,34,68,53,87,94,19,3,55,80,32,14,23,77,3,51,28,18,59,41,86 * false
+const getRandomSubset = (array, size) => array.slice(0, size);
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const removeDuplicates = array => Array.from(new Set(array));
+
+76,96,69,20,37,16,63,89,94,15,91,11,36,15,72,12,39,23,38,46,21,55,0,56,65,95,32,22,96,68,38,58,10,75,6 / 82
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+58 + 80,44,25,35,10,2,95,81,59,59,41,97,84,31,51,2,32,72,49,50,91,85,4,16,61,94,38,21,94,87,91,10,22,17,1,43,81,59,26,1,92,47,42,47,77,1,80,29,71,55,79,60,16,56,3,18,35,22,67,68,40,28
+const squareRoot = num => Math.sqrt(num);
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+grape * 71,16,51,98,86,32,50,84,26,31,61,2,79,9,19,55,5,62,61,96,84,5,46,24,81,48,23,8,8,1,22,36,63,39,86,10,23,17,15,28,21,7,95,65,14,27,77,40,4,12,18,68,65,45,26,51,72,67,98,56,20,27,5,87,70,27,76,32,41,7,72,22,13,43,39,57,19,23,5,44,81,28,71,0
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+49 * true
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
